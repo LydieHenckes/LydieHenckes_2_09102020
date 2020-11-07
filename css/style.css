@@ -104,8 +104,8 @@ body {
 }
 
 a {
-color: inherit;
-text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 h2 {
 	font-size: 1.3rem;
@@ -127,7 +127,7 @@ h3 {
 	display:inline-flex;
 	max-width: 100%;
   	overflow: hidden;
-  	margin: 0.625rem 0px 1.25rem 0px;
+  	margin: 0.625rem 0px 1.25rem 0rem;
 }
 .searchInputI::placeholder {
   font-size: 1.1rem;
@@ -180,7 +180,7 @@ color: #000;
 		display: block;
 	}
 	.searchInputButtonIcon{
-		display: none;
+		display: none!important;
 	}
 }
 @media (max-width: 767px) {
@@ -314,7 +314,7 @@ color: #000;
 	}
 	.popularContainer{
 	
-		padding: 1.875rem 1.5625rem 1.25rem 1.5625;
+		padding: 1.875rem 1.5625rem 1.25rem 1.5625rem;
 	}
 }
 @media (max-width: 991px) {
@@ -430,7 +430,7 @@ color: #000;
 	position: absolute;
 	top: 0;
 	left: 0;
-	border-radius: 1rem;
+	border-radius: 0.8rem;
 	
 }
 .hostGalleryImgDetails{
@@ -445,7 +445,6 @@ color: #000;
 }
 .popularTitleIcon{
 	align-self: flex-start;
-/*?*/
 }
 .poluparGallery{
 	display: flex;
@@ -470,15 +469,15 @@ color: #000;
 .poluparGallery :last-child{
 	margin-bottom: 0rem;
 }
-.popularGalleryItem img{
+.popularGalleryImg img{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	position: absolute;
 	top: 0;
 	left: 0;
-	border-top-left-radius: 1rem;
-	border-bottom-left-radius: 1rem;
+	border-top-left-radius: 0.8rem;
+	border-bottom-left-radius: 0.8rem;
 }
 .popularGalleryImgDetails {
 	flex: 1 1 auto;
@@ -637,7 +636,7 @@ i[data-checked=false] {
 	box-shadow: 0 0 1rem #0000002e;
 }
 .activitiesItemImg{
-   flex: 1 1 50%; /*...!!!*/
+    flex: 1 1 auto; 
 	position: relative;
 	overflow: hidden;
  
@@ -699,7 +698,7 @@ i[data-checked=false] {
 		margin-bottom: 1rem;
 	}
 	.footerItem :last-child{
-		margin-bottom: 0rem;
+		margin-bottom: 2em;
 	}
 }
 @media (max-width: 480px) {
@@ -717,6 +716,6 @@ i[data-checked=false] {
 		margin-bottom: 1rem;
 	}
 	.footerItem :last-child{
-		margin-bottom: 0rem;
+		margin-bottom: 2rem;
 	}
 }
