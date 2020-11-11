@@ -1,30 +1,29 @@
 body {
 	font-family: 'Raleway', sans-serif;
+	margin: 0 auto;
 }
 
-.wrapper{
-	min-height: 100%;
-	overflow: hidden;
-}
-.content{
+.content {
 	max-width: 1340px;
-	margin: 0px 3.125rem; 
+	margin: 0px auto; 
+	padding: 0 3.125rem;
 }
 @media (max-width: 1199px) {
-	.content{
-		margin: 0px 2.5rem; 
+	.content {
+		padding: 0px 2.5rem; 
 	}
 }
 @media (max-width: 991px) {
 	.content{
-		margin: 0px 1.875rem; 
+		padding: 0px 1.875rem; 
 	}
 }
 @media (max-width: 767px) {
 	.content{
-		margin: 1.25rem 1.25rem 0rem 1.25rem;
+		padding: 0rem 1.25rem;
 	}
 }
+
 .headerContainer{
 	display: grid;
 	grid-template-columns: auto 1fr auto auto; 
@@ -35,7 +34,6 @@ body {
 
 @media (max-width: 767px){
 	.headerContainer{
-	/*	display: grid;*/
 		grid-template-columns: auto 1fr;
 		grid-template-rows: auto auto;
 		grid-template-areas: "hdimg hdsign"
@@ -52,7 +50,7 @@ body {
 	display: flex;
   	align-items: center;
 	grid-area: hdnav;
-	align-items: center;
+	
 }
 .headerNavItemLink{
 	flex: 1 1 50%;
@@ -63,7 +61,6 @@ body {
 }
 .headerSign{
 	padding: 2.1875rem 1.5625rem 1.5625rem 1.5625rem;
-
 	grid-area: hdsign;
 	color: #0065FC;
 	font-weight: 700;
@@ -82,7 +79,7 @@ body {
 @media (max-width: 767px){
 	.headerSign{
 		justify-self: end;
-		padding: 0.625rem;
+		padding: 2.1875rem 0.625rem 1.5625rem 0.625rem;
 	}
 	.headerNavItem{
 		justify-content: space-around;
@@ -125,12 +122,8 @@ h3 {
   	margin: 0.625rem 0px 1.25rem 0rem;
 }
 .searchInputI::placeholder {
-  font-size: 1.1rem;
-  color: #000000;
-}
-.searchInputI::-moz-placeholder {
-  font-size: 1.1rem;
-  color: #000000;
+    font-size: 1.1rem;
+    color: #000000;
 }
 .searchInputIcon{
 	display: block;
@@ -163,8 +156,8 @@ h3 {
 
 }
 .searchInputButton:hover{
-background-color: #A9CAFC;
-color: #000;
+	background-color: #A9CAFC;
+	color: #000;
 }
 
 @media (min-width: 768px){
@@ -239,7 +232,7 @@ color: #000;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border:2px solid #8855;
+	border:2px solid rgba(0,0,0,0.2);
 	
 }
 .filterItem:hover{
@@ -395,7 +388,7 @@ color: #000;
 
 .hostGalleryItemFrame{
 	border-radius: 1rem;
-	box-shadow: 0 0 1rem #0000002e;
+	box-shadow: 0 0 1rem rgba(0,0,0,0.22);
 }
 .hostGalleryItem{
 	border-radius: 1rem;
@@ -621,7 +614,7 @@ i[data-checked=false] {
 
 	border-radius: 1rem;
 	height: 100%;
-	box-shadow: 0 0 1rem #0000002e;
+	box-shadow: 0 0 1rem rgba(0,0,0,0.22);
 }
 .activitiesItemImg{
     flex: 1 1 auto; 
@@ -641,12 +634,11 @@ i[data-checked=false] {
 }
 
 .activitiesItemText{
-	flex: 0 0 3.4575rem;
-	
+	flex: 0 0 3.125rem;
+
 	padding: 1.25rem;
 	font-weight: 700;
 }
-/* CSS pour le footer*/
 .footer {
 	background-color: #F2F2F2;
 }
@@ -686,7 +678,8 @@ i[data-checked=false] {
 		margin-bottom: 1rem;
 	}
 	.footerItem :last-child{
-		margin-bottom: 0em;
+		margin-bottom: 0rem;
 	}
 }
+
 
