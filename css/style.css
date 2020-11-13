@@ -635,7 +635,6 @@ i[data-checked=false] {
 
 .activitiesItemText{
 	flex: 0 0 3.125rem;
-
 	padding: 1.25rem;
 	font-weight: 700;
 }
@@ -681,5 +680,3 @@ i[data-checked=false] {
 		margin-bottom: 0rem;
 	}
 }
-
-
