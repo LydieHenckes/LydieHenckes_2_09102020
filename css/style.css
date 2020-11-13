@@ -114,13 +114,12 @@ h3 {
 }.searchTitleText{
 	margin-bottom: 0.625rem;
 }
-
 .searchInputForm{
 	display:inline-flex;
 	max-width: 100%;
   	overflow: hidden;
   	margin: 0.625rem 0px 1.25rem 0rem;
-}
+ }
 .searchInputI::placeholder {
     font-size: 1.1rem;
     color: #000000;
@@ -144,6 +143,11 @@ h3 {
 	font-size: 1rem;
 	font-weight: 700;
 }
+.buttonFrame{
+ 	border-top: 1px solid rgba(0,0,0,0.1);
+ 	border-bottom: 1px solid rgba(0,0,0,0.1);
+ 	border-radius: 0rem 1rem 1rem 0rem;
+}
 .searchInputButton{
 	width: 8.4375rem;
 	height: 3.125rem;
@@ -153,7 +157,7 @@ h3 {
 	color: #ffffff;
 	cursor: pointer;
 	border-radius: 0rem 1rem 1rem 0rem;
-
+	margin: -1px;
 }
 .searchInputButton:hover{
 	background-color: #A9CAFC;
